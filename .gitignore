@@ -8,4 +8,4 @@
 /tests/*.out
 build
 zyrox*.txt
-/deps/*/CMakeLists.txt
+/deps/quickjs/CMakeLists.txt
