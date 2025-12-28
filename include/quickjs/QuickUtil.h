@@ -83,7 +83,7 @@
         JSValue rl_obj = JS_GetPropertyStr(ctx, global_obj, "rl");             \
         JS_SetPropertyStr(ctx, rl_obj, #name, name##_class);                   \
                                                                                \
-        code; /* incase *etra* init code was needed */                         \
+        code; /* incase *extra* init code was needed */                         \
                                                                                \
         JS_FreeValue(ctx, global_obj);                                         \
         JS_FreeValue(ctx, rl_obj);                                             \
