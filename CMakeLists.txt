@@ -38,8 +38,10 @@ add_library(zyrox SHARED
         src/passes/StringEncryption.cpp
 )
 
-set(QUICKJS_SRC_DIR ${CMAKE_SOURCE_DIR}/deps/quickjs)
-set(QUICKJS_CMAKE_SRC ${CMAKE_SOURCE_DIR}/cmake/quickjs.cmake)
+set(ZYROX_ROOT ${CMAKE_CURRENT_LIST_DIR})
+
+set(QUICKJS_SRC_DIR ${ZYROX_ROOT}/deps/quickjs)
+set(QUICKJS_CMAKE_SRC ${ZYROX_ROOT}/cmake/quickjs.cmake)
 set(QUICKJS_CMAKE_DST ${QUICKJS_SRC_DIR}/CMakeLists.txt)
 
 if(NOT EXISTS ${QUICKJS_CMAKE_DST})

@@ -36,7 +36,7 @@ clone and compile zyrox:
 git clone --recurse-submodules https://github.com/PeterHackz/zyrox.git
 cd zyrox
 cmake -S . -B build -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++
-cmake --build build --parallel
+cmake --build build --parallel 4
 ```
 
 # Usage
