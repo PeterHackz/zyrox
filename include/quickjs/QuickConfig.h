@@ -2,7 +2,7 @@
 #define QUICK_CONFIG_H
 
 #include <llvm/IR/Module.h>
-#include <quickjs/quickjs.h>
+#include <quickjs.h>
 
 using namespace llvm;
 

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CurrDirName=$(pwd)
+
+cat <<EOL >.clangd
+CompileFlags:
+  Add:
+    - -I/lib/llvm-18/include/
+    - -I$CurrDirName/include
+    - -I$CurrDirName/deps/quickjs
+    - -std=c++20
+EOL

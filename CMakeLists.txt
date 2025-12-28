@@ -10,6 +10,7 @@ find_package(LLVM 18.1.3 CONFIG REQUIRED)
 include_directories(
         ${LLVM_INCLUDE_DIRS}
         include
+        deps/quickjs
 )
 
 add_library(zyrox SHARED

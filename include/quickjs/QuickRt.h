@@ -2,7 +2,7 @@
 #define QUICK_RT_H
 
 #include <optional>
-#include <quickjs/quickjs.h>
+#include <quickjs.h>
 
 class QuickRt
 {

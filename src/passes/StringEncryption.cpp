@@ -7,7 +7,6 @@
 #include <llvm/IR/IRBuilder.h>
 #include <llvm/Transforms/Utils/ModuleUtils.h>
 #include <quickjs/QuickRt.h>
-#include <quickjs/quickjs.h>
 #include <string>
 #include <utility>
 #include <utils/Logger.h>

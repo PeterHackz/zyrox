@@ -6,7 +6,6 @@
 #include <quickjs/QuickConfig.h>
 #include <quickjs/QuickRt.h>
 #include <quickjs/QuickUtil.h>
-#include <quickjs/quickjs.h>
 #include <utils/Logger.h>
 #include <utils/ModuleUtils.h>
 

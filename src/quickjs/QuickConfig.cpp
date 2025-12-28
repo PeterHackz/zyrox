@@ -6,7 +6,6 @@
 #include <optional>
 #include <quickjs/QuickConfig.h>
 #include <quickjs/QuickRt.h>
-#include <quickjs/quickjs.h>
 #include <utils/Logger.h>
 
 void JsFreeValues(JSContext *ctx, JSValue *argv, int argc)
