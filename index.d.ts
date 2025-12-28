@@ -5,7 +5,6 @@ declare enum ObfuscationType {
     ControlFlowFlattening,
     BasicBlockSplitter,
     IndirectBranch,
-    ExtractBasicBlock,
     SimpleIndirectBranch,
 }
 
@@ -29,10 +28,6 @@ declare interface FunctionPassOptions {
     "ControlFlowFlattening.UseGlobalVariableOpaquesChance"?: number;
     "ControlFlowFlattening.UseSipHashedStateChance"?: number;
     "ControlFlowFlattening.CloneSipHashChance"?: number;
-
-    "ExtractBasicBlock.MinSiz"?: number;
-    "ExtractBasicBlock.MaxSize"?: number;
-    "ExtractBasicBlock.Chance"?: number;
 }
 
 declare class z {
