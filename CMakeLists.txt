@@ -7,6 +7,14 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(LLVM 18.1.3 CONFIG REQUIRED)
 
+llvm_map_components_to_libnames(LLVM_LIBS
+    Core
+    Support
+    Analysis
+    TransformUtils
+    IRReader
+)
+
 add_library(zyrox SHARED
         src/ZyroxPlugin.cpp
 
@@ -66,4 +74,7 @@ endif()
 
 add_subdirectory(deps/quickjs)
 
-target_link_libraries(zyrox PRIVATE quickjs)
+target_link_libraries(zyrox PRIVATE
+    quickjs
+    ${LLVM_LIBS}
+)
