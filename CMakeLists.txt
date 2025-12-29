@@ -36,7 +36,7 @@ add_library(zyrox SHARED
 target_include_directories(zyrox PRIVATE
     ${LLVM_INCLUDE_DIRS}
     include
-    deps/quickjs
+    -iquote deps/quickjs
 )
 
 if(APPLE)

@@ -1,8 +1,8 @@
 #ifndef QUICK_RT_H
 #define QUICK_RT_H
 
+#include "quickjs.h"
 #include <optional>
-#include <quickjs.h>
 
 class QuickRt
 {
