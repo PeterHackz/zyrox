@@ -350,7 +350,7 @@ when this pass is used the plugin will output a `zyrox_tables.txt` file to be us
 
 `PyPlugin.py` will encrypt the jump tables and patch relocation entries, then make the relocator point to jump_table[0]
 of every table. a relocator basically does this:
-`target.writePointer(base.add(value))`, so by setting value to 1, we make relocator give us base address and put it
+`target.writePointer(base.add(value))`, so by setting value to 0, we make relocator give us base address and put it
 in jump table at runtime, and we use it a long with the `goto` to generate the runtime address. on arm32 thumb mode
 the pass automatically adds `| 1` after decryption.
 
@@ -446,7 +446,7 @@ __attribute__((annotate("bbs:1,15,30,100"))) void hello_world () {
 }
 ```
 
-this means: run [Basic Block Splitter](#basic-block-splitter) on `hello_world` 1 time with min size =15, max size = 30
+this means: run [Basic Block Splitter](#basic-block-splitter) on `hello_world` 1 time with min size = 15, max size = 30
 and chance = 100.
 
 you can also combine passes:
