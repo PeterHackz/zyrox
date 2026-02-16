@@ -45,10 +45,10 @@ void MBASub::ObfuscateFunction(Function &func)
 
 void MBASub::RunOnBasicBlock(BasicBlock &bb)
 {
+    runOnMul(bb);
     runOnSub(bb);
     runOnAdd(bb);
     runOnXor(bb);
-    runOnMul(bb);
     runOnOr(bb);
 }
 
