@@ -1,4 +1,4 @@
-# Zyrox LLVM Obfuscator
+# [Zyrox LLVM Obfuscator](https://github.com/PeterHackz/zyrox)
 
 ### llvm compile and link-time plugin for obfuscating native code
 
